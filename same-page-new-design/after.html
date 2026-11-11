@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHNOVA 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #1b2430;
+    background: #f2f5f8;
+    line-height: 1.55;
+  }
+  /* Hero: one clear headline, one clear action */
+  .hero {
+    background: linear-gradient(135deg, #0f2a4a 0%, #123a5c 55%, #1b5e7a 100%);
+    color: #ffffff;
+    padding: 56px 20px 48px;
+    text-align: center;
+  }
+  .hero h1 {
+    margin: 0 0 12px;
+    font-size: clamp(2.2rem, 7vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: 0.04em;
+    font-weight: 800;
+  }
+  .hero .tagline {
+    margin: 0 auto 20px;
+    font-size: clamp(1.05rem, 3vw, 1.35rem);
+    color: #d7e6f2;
+    max-width: 560px;
+  }
+  .highlights {
+    margin: 0 auto 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffd54a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4em;
+  }
+  .highlights .sep { color: #8fb4cc; }
+  .btn {
+    display: inline-block;
+    background: #ffb703;
+    color: #1b2430;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 999px;
+  }
+  .btn:hover, .btn:focus { background: #ffc93c; }
+  /* Cards: related things grouped, unrelated things separated */
+  .cards {
+    max-width: 960px;
+    margin: -24px auto 0;
+    padding: 0 16px 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .card {
+    background: #ffffff;
+    border: 1px solid #dde5ec;
+    border-top: 5px solid #e07b39;
+    border-radius: 14px;
+    padding: 26px 24px;
+    box-shadow: 0 6px 18px rgba(15, 42, 74, 0.08);
+  }
+  .card.classes { border-top-color: #0e7a6b; }
+  .card h2 {
+    margin: 0 0 6px;
+    font-size: 1.45rem;
+    line-height: 1.2;
+    color: #0f2a4a;
+  }
+  .card .lede { margin: 0 0 18px; font-size: 1.05rem; color: #3d4c5c; }
+  .card .menu {
+    margin: 0;
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: #1b2430;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em;
+  }
+  .card .menu .sep { color: #9aa8b5; font-weight: 400; }
+  .card .link {
+    display: inline-block;
+    margin: 0 0 18px;
+    font-weight: 700;
+    color: #0f2a4a;
+    text-decoration: none;
+    border-bottom: 2px solid #ffb703;
+    padding-bottom: 2px;
+  }
+  .card .link:hover, .card .link:focus { color: #1b5e7a; }
+  @media (max-width: 640px) {
+    .hero { padding: 40px 16px 36px; }
+    .cards { grid-template-columns: 1fr; margin-top: -16px; }
+    .card { padding: 22px 18px; }
+  }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <h1>TECHNOVA 2026</h1>
+    <p class="tagline">Three days of robotics, code and music.</p>
+    <p class="highlights"><span>Robotics</span><span class="sep">·</span><span>Hackathon</span><span class="sep">·</span><span>Music night</span></p>
+    <a class="btn" href="#">Register now</a>
+  </header>
+  <main class="cards">
+    <section class="card">
+      <h2>Chai and Co.</h2>
+      <p class="lede">Fresh chai and snacks, all day.</p>
+      <a class="link" href="#">See today's special</a>
+      <p class="menu"><span>Masala chai ₹30</span><span class="sep">·</span><span>Cold coffee ₹90</span><span class="sep">·</span><span>Maska pav ₹45</span></p>
+    </section>
+    <section class="card classes">
+      <h2>Bright Path Classes</h2>
+      <p class="lede">JEE and NEET batches near you.</p>
+      <a class="link" href="#">Book a free demo</a>
+      <p class="menu"><span>Small batches</span><span class="sep">·</span><span>Weekly tests</span><span class="sep">·</span><span>Doubt desk</span></p>
+    </section>
+  </main>
+</body>
+</html>
